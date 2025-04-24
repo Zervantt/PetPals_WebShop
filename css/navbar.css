@@ -1,0 +1,37 @@
+.navbar {
+    padding: 1rem 0; /* Sesuaikan padding untuk kontrol tinggi navbar */
+}
+
+.navbar-color{
+    background-color: #A67B5B;
+}
+
+/* Styling untuk logo gambar di navbar */
+.navbar-brand img {
+    height: 180px; /* Sesuaikan tinggi gambar sesuai kebutuhan */
+    width: auto; /* Memastikan proporsi gambar tetap */
+}
+
+/* Alternatif untuk memastikan gambar tidak membesar di luar batas */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    height: 45px; /* Menyesuaikan dengan kontainer navbar */
+}
+
+/* Styling tambahan untuk tampilan mobile */
+@media (max-width: 767.98px) {
+    .navbar {
+        padding: 0.4rem 0rem;
+    }
+
+    .navbar-brand img {
+        height: 150px; /* Sesuaikan tinggi logo untuk mobile */
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 1rem; /* Pastikan tombol hamburger ada di pojok kanan */
+        top: 0.5rem;
+    }
+}

@@ -1,0 +1,90 @@
+/* Color Palletes */
+.warna1{
+    background-color: #00A9FF;
+}
+
+.warna2{
+    background-color: #31bbe0;
+}
+
+.warna3{
+    background-color: #89CFF3;
+}
+
+.warna4{
+    background-color: #A0E9FF;
+}
+
+.warna5{
+    background-color: #CDF5FD;
+}
+
+.warna6{
+    background-color: #3E3232;
+}
+
+.warna7{
+    background-color: #503C3C;
+}
+
+.warna8{
+    background-color: #6a3825;
+}
+
+.warna9{
+    background-color: #7E6363;
+}
+
+.warna10{
+    background-color: #A87C7C;
+}
+
+.warna11{
+    background-color: #FFFFFF;
+}
+
+/* Banner */
+.banner{
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../asset/frontend/Banner1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.input__button__shadow--variant {
+    border-radius: 15px;
+    background-color: #00A9FF;
+    padding: 10px;
+    border: none;
+}
+  
+.input__button__shadow--variant:hover {
+    background-color: #31bbe0;
+}
+
+/* Kategori Layanan */
+.highlighted-kategori{
+    height: 400px;
+}
+
+.kategori-hotel{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../asset/frontend/PetPals_Hotel.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.kategori-produk{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../asset/frontend/Makanan-Hewan.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.kategori-grooming{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../asset/frontend/PetPals_Grooming.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.no-decoration{
+    text-decoration: none;
+}

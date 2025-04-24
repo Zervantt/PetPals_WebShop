@@ -1,0 +1,68 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    -webkit-user-select: none; /* Untuk Safari dan Chrome */
+    -moz-user-select: none; /* Untuk Firefox */
+    -ms-user-select: none; /* Untuk Internet Explorer dan Edge */
+    user-select: none; /* Standar CSS */
+    pointer-events: none; /* Mencegah interaksi dengan gambar */
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    overflow-x: auto; /* Memungkinkan scroll horizontal */
+    overflow-y: hidden; /* Mencegah scroll bar vertikal */
+    gap: 20px; /* Menjaga jarak antar card */
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+    -ms-overflow-style: none; /* Menghilangkan scrollbar pada IE dan Edge */
+    scrollbar-width: none; /* Menghilangkan scrollbar pada Firefox */
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none; /* Menghilangkan scrollbar pada Chrome, Safari, dan Opera */
+}
+
+.card {
+    scroll-snap-align: center;
+    box-sizing: border-box;
+    padding: 0;
+    flex-shrink: 0;
+    width: 300px;
+    height: 180px;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* Media Queries untuk perangkat handphone */
+@media (max-width: 768px) {
+    .card {
+        width: 250px;
+        height: 150px;
+    }
+
+    .wrapper {
+        padding: 10px 0;
+    }
+}
